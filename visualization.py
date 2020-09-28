@@ -25,6 +25,7 @@ def visualize_result(output_path, data_path, output_name):
     plt.ylim((3.0, 5.5))
     plt.savefig(os.path.join(output_path, output_name))
     plt.show()
+    plt.exit()
 
 
 visualize_result("./", "./models/vgg_bn", "vgg_bn_result")
